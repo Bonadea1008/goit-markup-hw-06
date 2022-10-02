@@ -93,7 +93,7 @@
                   </div>
                 </div>
                 <div class="form-element">
-                  <label for="user-comments" placeholder class="form-label">Коментар</label>
+                  <label for="user-comments" class="form-label">Коментар</label>
                   <textarea
                     name="comment"
                     id="user-comments"
@@ -102,13 +102,17 @@
                   ></textarea>
                 </div>
                 <div class="accept">
-                  <input type="checkbox" name="accept" id="accept" required />
-                  <label for="accept"
-                    >Погоджуюся з розсилкою та приймаю
-                    <a href="" class="accept-link"> Умови договору </a></label
+                  <input type="checkbox" name="accept" id="accept" class="visually-hidden" />
+                  <label for="accept" class="accept-label">
+                    <span class="checkbox">
+                      <svg width="11" height="8">
+                        <use href="./images/svg/icons.svg#icon-vector"></use>
+                      </svg>
+                    </span>
+                    Погоджуюся з розсилкою та приймаю
+                    <a href="" class="accept-link">Умови договору</a></label
                   >
                 </div>
-
                 <button type="submit" class="form-button">Відправити</button>
               </form>
             </div>
